@@ -43,18 +43,15 @@
             this.quyenTableAdapter = new QLTapHoa.QLTapHoaDataSetTableAdapters.QuyenTableAdapter();
             this.btn_openPass = new System.Windows.Forms.Panel();
             this.btn_ClosePass = new System.Windows.Forms.Panel();
-            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonLinkLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.qLTapHoaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quyenBindingSource)).BeginInit();
             this.btn_ClosePass.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
-            this.kryptonPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txt_User
             // 
-            this.txt_User.Location = new System.Drawing.Point(155, 122);
+            this.txt_User.Location = new System.Drawing.Point(336, 91);
             this.txt_User.Name = "txt_User";
             this.txt_User.Size = new System.Drawing.Size(190, 22);
             this.txt_User.TabIndex = 0;
@@ -62,7 +59,7 @@
             // 
             // btn_DangNhap
             // 
-            this.btn_DangNhap.Location = new System.Drawing.Point(139, 261);
+            this.btn_DangNhap.Location = new System.Drawing.Point(320, 230);
             this.btn_DangNhap.Name = "btn_DangNhap";
             this.btn_DangNhap.Size = new System.Drawing.Size(190, 37);
             this.btn_DangNhap.TabIndex = 1;
@@ -73,7 +70,7 @@
             // chb_remember
             // 
             this.chb_remember.AutoSize = true;
-            this.chb_remember.Location = new System.Drawing.Point(139, 217);
+            this.chb_remember.Location = new System.Drawing.Point(320, 186);
             this.chb_remember.Name = "chb_remember";
             this.chb_remember.Size = new System.Drawing.Size(72, 20);
             this.chb_remember.TabIndex = 2;
@@ -83,7 +80,7 @@
             // 
             // txt_pass
             // 
-            this.txt_pass.Location = new System.Drawing.Point(155, 169);
+            this.txt_pass.Location = new System.Drawing.Point(336, 138);
             this.txt_pass.Name = "txt_pass";
             this.txt_pass.PasswordChar = '*';
             this.txt_pass.Size = new System.Drawing.Size(190, 22);
@@ -92,7 +89,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 128);
+            this.label1.Location = new System.Drawing.Point(213, 97);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 16);
             this.label1.TabIndex = 4;
@@ -101,7 +98,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(62, 175);
+            this.label2.Location = new System.Drawing.Point(243, 144);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 16);
             this.label2.TabIndex = 5;
@@ -111,7 +108,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(57, 83);
+            this.label3.Location = new System.Drawing.Point(238, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 16);
             this.label3.TabIndex = 4;
@@ -120,7 +117,7 @@
             // cmb_Quyen
             // 
             this.cmb_Quyen.FormattingEnabled = true;
-            this.cmb_Quyen.Location = new System.Drawing.Point(155, 83);
+            this.cmb_Quyen.Location = new System.Drawing.Point(336, 52);
             this.cmb_Quyen.Name = "cmb_Quyen";
             this.cmb_Quyen.Size = new System.Drawing.Size(190, 24);
             this.cmb_Quyen.TabIndex = 6;
@@ -155,33 +152,16 @@
             this.btn_ClosePass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_ClosePass.BackgroundImage")));
             this.btn_ClosePass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_ClosePass.Controls.Add(this.btn_openPass);
-            this.btn_ClosePass.Location = new System.Drawing.Point(319, 169);
+            this.btn_ClosePass.Location = new System.Drawing.Point(532, 138);
             this.btn_ClosePass.Name = "btn_ClosePass";
             this.btn_ClosePass.Size = new System.Drawing.Size(26, 22);
             this.btn_ClosePass.TabIndex = 8;
             this.btn_ClosePass.Click += new System.EventHandler(this.btn_ClosePass_Click);
             this.btn_ClosePass.Paint += new System.Windows.Forms.PaintEventHandler(this.btn_ClosePass_Paint);
             // 
-            // kryptonPanel1
-            // 
-            this.kryptonPanel1.Controls.Add(this.kryptonLinkLabel1);
-            this.kryptonPanel1.Controls.Add(this.cmb_Quyen);
-            this.kryptonPanel1.Controls.Add(this.txt_User);
-            this.kryptonPanel1.Controls.Add(this.btn_ClosePass);
-            this.kryptonPanel1.Controls.Add(this.btn_DangNhap);
-            this.kryptonPanel1.Controls.Add(this.chb_remember);
-            this.kryptonPanel1.Controls.Add(this.label2);
-            this.kryptonPanel1.Controls.Add(this.txt_pass);
-            this.kryptonPanel1.Controls.Add(this.label3);
-            this.kryptonPanel1.Controls.Add(this.label1);
-            this.kryptonPanel1.Location = new System.Drawing.Point(366, 0);
-            this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(369, 441);
-            this.kryptonPanel1.TabIndex = 9;
-            // 
             // kryptonLinkLabel1
             // 
-            this.kryptonLinkLabel1.Location = new System.Drawing.Point(217, 217);
+            this.kryptonLinkLabel1.Location = new System.Drawing.Point(408, 182);
             this.kryptonLinkLabel1.Name = "kryptonLinkLabel1";
             this.kryptonLinkLabel1.Size = new System.Drawing.Size(118, 24);
             this.kryptonLinkLabel1.TabIndex = 9;
@@ -194,17 +174,24 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(734, 440);
-            this.Controls.Add(this.kryptonPanel1);
+            this.Controls.Add(this.kryptonLinkLabel1);
+            this.Controls.Add(this.cmb_Quyen);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txt_User);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btn_ClosePass);
+            this.Controls.Add(this.txt_pass);
+            this.Controls.Add(this.btn_DangNhap);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.chb_remember);
             this.Name = "fr_DangNhap";
             this.Text = "Dang Nhap";
             this.Load += new System.EventHandler(this.fr_DangNhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.qLTapHoaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quyenBindingSource)).EndInit();
             this.btn_ClosePass.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
-            this.kryptonPanel1.ResumeLayout(false);
-            this.kryptonPanel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -223,7 +210,6 @@
         private QLTapHoaDataSetTableAdapters.QuyenTableAdapter quyenTableAdapter;
         private System.Windows.Forms.Panel btn_openPass;
         private System.Windows.Forms.Panel btn_ClosePass;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private ComponentFactory.Krypton.Toolkit.KryptonLinkLabel kryptonLinkLabel1;
     }
 }

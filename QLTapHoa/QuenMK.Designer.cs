@@ -33,12 +33,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.kryptonLinkLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLinkLabel();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.kryptonTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonTextBox1
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(422, 122);
+            this.kryptonTextBox1.Location = new System.Drawing.Point(422, 124);
             this.kryptonTextBox1.Name = "kryptonTextBox1";
             this.kryptonTextBox1.Size = new System.Drawing.Size(211, 31);
             this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -49,7 +50,7 @@
             // 
             // kryptonTextBox2
             // 
-            this.kryptonTextBox2.Location = new System.Drawing.Point(422, 193);
+            this.kryptonTextBox2.Location = new System.Drawing.Point(422, 182);
             this.kryptonTextBox2.Name = "kryptonTextBox2";
             this.kryptonTextBox2.Size = new System.Drawing.Size(211, 31);
             this.kryptonTextBox2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -64,7 +65,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.Location = new System.Drawing.Point(339, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(401, 52);
+            this.label1.Size = new System.Drawing.Size(392, 51);
             this.label1.TabIndex = 1;
             this.label1.Text = "QUEN MAT KHAU";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -86,11 +87,24 @@
             this.kryptonPanel1.Size = new System.Drawing.Size(243, 436);
             this.kryptonPanel1.TabIndex = 3;
             // 
+            // kryptonTextBox3
+            // 
+            this.kryptonTextBox3.Location = new System.Drawing.Point(371, 347);
+            this.kryptonTextBox3.Name = "kryptonTextBox3";
+            this.kryptonTextBox3.Size = new System.Drawing.Size(268, 31);
+            this.kryptonTextBox3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox3.StateCommon.Border.Rounding = 5;
+            this.kryptonTextBox3.TabIndex = 4;
+            this.kryptonTextBox3.Text = "kryptonTextBox3";
+            // 
             // QuenMK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.kryptonTextBox3);
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.kryptonLinkLabel1);
             this.Controls.Add(this.label1);
@@ -111,5 +125,6 @@
         private System.Windows.Forms.Label label1;
         private ComponentFactory.Krypton.Toolkit.KryptonLinkLabel kryptonLinkLabel1;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
     }
 }

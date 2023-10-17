@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLTapHoa.QLTapHoaDataSetTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,7 +27,7 @@ namespace QLTapHoa
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
