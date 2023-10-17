@@ -1,0 +1,9 @@
+C:\Users\JSON\source\repos\QLTapHoa\DAL\bin\Debug\DAL.dll
+C:\Users\JSON\source\repos\QLTapHoa\DAL\bin\Debug\DAL.pdb
+C:\Users\JSON\source\repos\QLTapHoa\DAL\bin\Debug\DTO.dll
+C:\Users\JSON\source\repos\QLTapHoa\DAL\bin\Debug\DTO.pdb
+C:\Users\JSON\source\repos\QLTapHoa\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\JSON\source\repos\QLTapHoa\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\JSON\source\repos\QLTapHoa\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\JSON\source\repos\QLTapHoa\DAL\obj\Debug\DAL.dll
+C:\Users\JSON\source\repos\QLTapHoa\DAL\obj\Debug\DAL.pdb

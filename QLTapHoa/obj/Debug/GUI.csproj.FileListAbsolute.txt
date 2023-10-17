@@ -1,0 +1,17 @@
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\QLTapHoa.exe.config
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\QLTapHoa.exe
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\QLTapHoa.pdb
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\BLL.dll
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\DTO.dll
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\DAL.dll
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\BLL.pdb
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\DTO.pdb
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\DAL.pdb
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.Form1.resources
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.Properties.Resources.resources
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.exe
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.pdb

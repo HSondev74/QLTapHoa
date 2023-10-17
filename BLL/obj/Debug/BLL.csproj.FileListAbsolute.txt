@@ -1,0 +1,11 @@
+C:\Users\JSON\source\repos\QLTapHoa\BLL\bin\Debug\BLL.dll
+C:\Users\JSON\source\repos\QLTapHoa\BLL\bin\Debug\BLL.pdb
+C:\Users\JSON\source\repos\QLTapHoa\BLL\bin\Debug\DAL.dll
+C:\Users\JSON\source\repos\QLTapHoa\BLL\bin\Debug\DTO.dll
+C:\Users\JSON\source\repos\QLTapHoa\BLL\bin\Debug\DAL.pdb
+C:\Users\JSON\source\repos\QLTapHoa\BLL\bin\Debug\DTO.pdb
+C:\Users\JSON\source\repos\QLTapHoa\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\JSON\source\repos\QLTapHoa\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\JSON\source\repos\QLTapHoa\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\JSON\source\repos\QLTapHoa\BLL\obj\Debug\BLL.dll
+C:\Users\JSON\source\repos\QLTapHoa\BLL\obj\Debug\BLL.pdb
