@@ -15,3 +15,15 @@ C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\GUI.csproj.CoreCompileInp
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.exe
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.pdb
+C:\Users\JSON\Source\Repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.fr_DangNhap.resources
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Docking.dll
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Docking.pdb
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Navigator.pdb
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.QuenMK.resources
