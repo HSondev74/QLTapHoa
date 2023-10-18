@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBAccess.cs" />
+    <Compile Include="HangDAL.cs" />
+    <Compile Include="KhachHangDAL.cs" />
     <Compile Include="NhanVienDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

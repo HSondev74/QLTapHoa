@@ -73,6 +73,7 @@ namespace QLTapHoa
             this.btn_Dong.Text = "Đóng";
             this.btn_Dong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Dong.UseVisualStyleBackColor = false;
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // dgv_QLNV
             // 
@@ -84,6 +85,7 @@ namespace QLTapHoa
             this.dgv_QLNV.RowTemplate.Height = 24;
             this.dgv_QLNV.Size = new System.Drawing.Size(1083, 343);
             this.dgv_QLNV.TabIndex = 1;
+            this.dgv_QLNV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_QLNV_CellClick);
             // 
             // txtGioiTinh
             // 
@@ -359,6 +361,7 @@ namespace QLTapHoa
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "fr_QLNV";
             this.Text = "fr_QLNV";
+            this.Load += new System.EventHandler(this.fr_QLNV_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_QLNV)).EndInit();
             this.panel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

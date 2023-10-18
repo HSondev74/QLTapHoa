@@ -14,7 +14,7 @@ namespace DAL
 
         public static SqlConnection taoketnoi()
         {
-            string chuoikn = @"Data Source=LAPTOP-TATT0IC4\SQLEXPRESS;Initial Catalog=QLTapHoa;Integrated Security=True";
+            string chuoikn = @"Data Source=DESKTOP-D5DH8VK\SQLEXPRESS;Initial Catalog=QLTapHoa;Integrated Security=True";
             SqlConnection conn = new SqlConnection(chuoikn);
             conn.Open();
             return conn;

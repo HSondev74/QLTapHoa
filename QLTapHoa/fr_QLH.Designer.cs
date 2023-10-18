@@ -229,6 +229,7 @@ namespace QLTapHoa
             this.dgv_Hang.RowTemplate.Height = 24;
             this.dgv_Hang.Size = new System.Drawing.Size(1086, 219);
             this.dgv_Hang.TabIndex = 2;
+            this.dgv_Hang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Hang_CellClick);
             // 
             // btnTimKiem
             // 
@@ -243,6 +244,7 @@ namespace QLTapHoa
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // btnHienThiDS
             // 
@@ -257,6 +259,7 @@ namespace QLTapHoa
             this.btnHienThiDS.Text = "Hiển Thị DS";
             this.btnHienThiDS.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHienThiDS.UseVisualStyleBackColor = false;
+            this.btnHienThiDS.Click += new System.EventHandler(this.btnHienThiDS_Click);
             // 
             // btnDong
             // 
@@ -271,6 +274,7 @@ namespace QLTapHoa
             this.btnDong.Text = "Đóng";
             this.btnDong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDong.UseVisualStyleBackColor = false;
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // btnBoQua
             // 
@@ -406,6 +410,7 @@ namespace QLTapHoa
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "fr_QLH";
             this.Text = "fr_QLH";
+            this.Load += new System.EventHandler(this.fr_QLH_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Hang)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

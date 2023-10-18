@@ -17,7 +17,7 @@ namespace BLL
         }
         public void Them_ChiTietKH(KhachHangDTO kh)
         {
-           KhachHangDAL.Them_ChiTietKH(kh);
+            KhachHangDAL.Them_ChiTietKH(kh);
         }
         public void Sua_KH(KhachHangDTO kh)
         {

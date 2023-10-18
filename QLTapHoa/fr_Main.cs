@@ -53,5 +53,11 @@ namespace QLTapHoa
                 label1.Text = "Admin";
             } 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            //fr_QLNV frqlth = new fr_QLNV();
+            //frqlth.Show();
+        }
     }
 }

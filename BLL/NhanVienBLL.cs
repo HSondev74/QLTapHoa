@@ -12,13 +12,17 @@ namespace BLL
 {
     public class NhanVienBLL
     {
-        public DataTable Tra_ds_KH()
+        public DataTable Tra_ds_nhanvien()
         {
-            return NhanVienDAL.Tra_ds_KH();
+            return NhanVienDAL.Tra_ds_nhanvien();
         }
-        public void themNV(NhanVien nhanvien)
-        {
-            NhanVienDAL.ThemNV(nhanvien);
-        }
+        //public DataTable Tra_ds_KH()
+        //{
+        //    return NhanVienDAL.Tra_ds_KH();
+        //}
+        //public void themNV(NhanVienDTO nhanvien)
+        //{
+        //    NhanVienDAL.ThemNV(nhanvien);
+        //}
     }
 }

@@ -76,6 +76,7 @@ namespace QLTapHoa
             this.dgvKhachhang.RowTemplate.Height = 24;
             this.dgvKhachhang.Size = new System.Drawing.Size(1083, 345);
             this.dgvKhachhang.TabIndex = 1;
+            this.dgvKhachhang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhachhang_CellClick);
             // 
             // panel2
             // 
@@ -104,6 +105,7 @@ namespace QLTapHoa
             this.btn_Dong.Text = "Đóng";
             this.btn_Dong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Dong.UseVisualStyleBackColor = false;
+            this.btn_Dong.Click += new System.EventHandler(this.btn_Dong_Click);
             // 
             // btn_BoQua
             // 
@@ -298,6 +300,7 @@ namespace QLTapHoa
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "fr_QLKH";
             this.Text = "fr_QLKH";
+            this.Load += new System.EventHandler(this.fr_QLKH_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachhang)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

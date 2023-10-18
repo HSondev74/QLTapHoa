@@ -22,7 +22,7 @@ namespace QLTapHoa
             public void Hienthi()
             {
                 dataGridView1.DataSource = null;
-                DataTable dt = nhanvien.Tra_ds_KH();
+                DataTable dt = nhanvien.Tra_ds_nhanvien();
                 dataGridView1.DataSource = dt;
             }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -31,15 +31,15 @@ namespace QLTapHoa
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            DataTable dt = nhanvien.Tra_ds_KH();
+            DataTable dt = nhanvien.Tra_ds_nhanvien();
             dataGridView1.DataSource = dt;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            NhanVien nhanviendto = new NhanVien(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text,textBox5.Text,dateTimePicker1.Value);
-            nhanvien.themNV(nhanviendto);
-            Hienthi();
+            //NhanVienDTO nhanviendto = new NhanVienDTO(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text,textBox5.Text,dateTimePicker1.Value);
+            //nhanvien.themNV(nhanviendto);
+            //Hienthi();
         }
     }
 }
