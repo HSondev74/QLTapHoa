@@ -16,7 +16,7 @@ namespace QLTapHoa
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fr_DangNhap());
+            Application.Run(new fr_Main());
         }
     }
 }
