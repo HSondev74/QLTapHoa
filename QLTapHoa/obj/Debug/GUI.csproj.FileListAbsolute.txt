@@ -27,3 +27,4 @@ C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.QuenMK.resources
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.fr_Main.resources

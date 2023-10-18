@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLTapHoa.QLTapHoaDataSetTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +23,11 @@ namespace QLTapHoa
             fr_DangNhap dangNhap = new fr_DangNhap();
             dangNhap.Show();
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

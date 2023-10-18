@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ComponentFactory.Krypton.Toolkit;
+//using ComponentFactory.Krypton.Toolkit;
 
 namespace QLTapHoa
 {
-    public partial class fr_DangNhap : KryptonForm
+    public partial class fr_DangNhap : Form
     {
         public fr_DangNhap()
         {
@@ -43,6 +43,9 @@ namespace QLTapHoa
             if(txt_User.Text != "")
             {
                 chb_remember.Checked = true;
+            }else
+            {
+                chb_remember.Checked = false;
             }
         }
 
@@ -52,8 +55,8 @@ namespace QLTapHoa
             user = txt_User.Text;
             pass = txt_pass.Text;
             string typeUser = cmb_Quyen.SelectedValue.ToString();
-            MessageBox.Show(typeUser);
-            string sql = $"select * from Account where type='{typeUser}' ";
+            
+            string sql = $"select * from Account where type = N'{typeUser}' ";
             DataTable dt = ketnoi.truyvan(sql);
             bool kt = false;
             foreach(DataRow dr in dt.Rows)
@@ -122,6 +125,11 @@ namespace QLTapHoa
             QuenMK quenMK = new QuenMK();
             quenMK.Show();
             this.Hide();
+        }
+
+        private void kryptonPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
