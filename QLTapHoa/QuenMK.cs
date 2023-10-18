@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
+using DTO;
+
 
 namespace QLTapHoa
 {
@@ -28,6 +31,30 @@ namespace QLTapHoa
         private void label1_Click(object sender, EventArgs e)
         {
             
+        }
+            ChatLieuBLL chatlieuBLL = new ChatLieuBLL();
+            ChatLieuDTO ChatLieuDTO = new ChatLieuDTO();
+        private void QuenMK_Load(object sender, EventArgs e)
+        {
+            DataTable dt = chatlieuBLL.Tra_ds_CL();
+            dataGridView1.DataSource = dt;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string sql1 = "delete from tblChatLieu where MaChatLieu = '" + kryptonTextBox1.Text + "' ";
+
+            ketnoi.thucthi(sql1);
+
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+
+
+
         }
     }
 }

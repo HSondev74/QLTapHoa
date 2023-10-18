@@ -81,71 +81,72 @@
             this.panel1.Controls.Add(this.panel12);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(210, 553);
+            this.panel1.Size = new System.Drawing.Size(210, 683);
             this.panel1.TabIndex = 0;
             // 
             // panel11
             // 
             this.panel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel11.BackgroundImage")));
             this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel11.Location = new System.Drawing.Point(18, 416);
+            this.panel11.Location = new System.Drawing.Point(18, 475);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(57, 34);
+            this.panel11.Size = new System.Drawing.Size(42, 27);
             this.panel11.TabIndex = 6;
             // 
             // panel10
             // 
             this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
             this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel10.Location = new System.Drawing.Point(20, 363);
+            this.panel10.Location = new System.Drawing.Point(18, 410);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(55, 42);
+            this.panel10.Size = new System.Drawing.Size(45, 36);
             this.panel10.TabIndex = 6;
             // 
             // panel9
             // 
             this.panel9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel9.BackgroundImage")));
             this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel9.Location = new System.Drawing.Point(17, 265);
+            this.panel9.Location = new System.Drawing.Point(20, 286);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(55, 36);
+            this.panel9.Size = new System.Drawing.Size(46, 33);
             this.panel9.TabIndex = 6;
             // 
             // panel8
             // 
             this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
             this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel8.Location = new System.Drawing.Point(21, 317);
+            this.panel8.Location = new System.Drawing.Point(21, 347);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(51, 33);
+            this.panel8.Size = new System.Drawing.Size(42, 30);
             this.panel8.TabIndex = 5;
             // 
             // panel7
             // 
             this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel7.Location = new System.Drawing.Point(22, 197);
+            this.panel7.Location = new System.Drawing.Point(22, 218);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(54, 53);
+            this.panel7.Size = new System.Drawing.Size(44, 38);
             this.panel7.TabIndex = 4;
             // 
             // panel6
             // 
             this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel6.Location = new System.Drawing.Point(23, 156);
+            this.panel6.Location = new System.Drawing.Point(23, 168);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(47, 31);
+            this.panel6.Size = new System.Drawing.Size(43, 26);
             this.panel6.TabIndex = 3;
             // 
             // panel5
             // 
             this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel5.Location = new System.Drawing.Point(21, 99);
+            this.panel5.Location = new System.Drawing.Point(21, 104);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(51, 35);
+            this.panel5.Size = new System.Drawing.Size(45, 30);
             this.panel5.TabIndex = 2;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // button8
             // 
@@ -153,7 +154,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button8.ForeColor = System.Drawing.Color.Transparent;
-            this.button8.Location = new System.Drawing.Point(66, 507);
+            this.button8.Location = new System.Drawing.Point(69, 622);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(138, 35);
             this.button8.TabIndex = 15;
@@ -167,7 +168,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button7.ForeColor = System.Drawing.Color.RosyBrown;
-            this.button7.Location = new System.Drawing.Point(66, 413);
+            this.button7.Location = new System.Drawing.Point(66, 464);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(135, 48);
             this.button7.TabIndex = 14;
@@ -181,7 +182,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button6.ForeColor = System.Drawing.Color.RosyBrown;
-            this.button6.Location = new System.Drawing.Point(66, 365);
+            this.button6.Location = new System.Drawing.Point(66, 406);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(135, 48);
             this.button6.TabIndex = 13;
@@ -195,7 +196,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button5.ForeColor = System.Drawing.Color.RosyBrown;
-            this.button5.Location = new System.Drawing.Point(66, 311);
+            this.button5.Location = new System.Drawing.Point(66, 339);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(135, 48);
             this.button5.TabIndex = 12;
@@ -209,7 +210,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button4.ForeColor = System.Drawing.Color.RosyBrown;
-            this.button4.Location = new System.Drawing.Point(66, 257);
+            this.button4.Location = new System.Drawing.Point(66, 278);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(138, 48);
             this.button4.TabIndex = 11;
@@ -223,7 +224,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button3.ForeColor = System.Drawing.Color.RosyBrown;
-            this.button3.Location = new System.Drawing.Point(66, 203);
+            this.button3.Location = new System.Drawing.Point(66, 213);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(138, 48);
             this.button3.TabIndex = 10;
@@ -237,13 +238,14 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button2.ForeColor = System.Drawing.Color.RosyBrown;
-            this.button2.Location = new System.Drawing.Point(66, 149);
+            this.button2.Location = new System.Drawing.Point(66, 156);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(143, 48);
             this.button2.TabIndex = 9;
             this.button2.Text = "Sản phẩm";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -276,9 +278,9 @@
             // 
             this.panel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel12.BackgroundImage")));
             this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel12.Location = new System.Drawing.Point(0, 496);
+            this.panel12.Location = new System.Drawing.Point(15, 616);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(79, 57);
+            this.panel12.Size = new System.Drawing.Size(73, 45);
             this.panel12.TabIndex = 7;
             // 
             // panel2
@@ -291,7 +293,7 @@
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Location = new System.Drawing.Point(209, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(898, 70);
+            this.panel2.Size = new System.Drawing.Size(1611, 89);
             this.panel2.TabIndex = 1;
             // 
             // dateTimePicker1
@@ -318,6 +320,7 @@
             this.label3.Size = new System.Drawing.Size(87, 25);
             this.label3.TabIndex = 3;
             this.label3.Text = "Quản Lý";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -355,20 +358,22 @@
             this.panel_body.BackColor = System.Drawing.Color.Gainsboro;
             this.panel_body.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_body.BackgroundImage")));
             this.panel_body.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel_body.Location = new System.Drawing.Point(211, 70);
+            this.panel_body.Location = new System.Drawing.Point(211, 82);
+            this.panel_body.MaximumSize = new System.Drawing.Size(1800, 601);
             this.panel_body.Name = "panel_body";
-            this.panel_body.Size = new System.Drawing.Size(896, 483);
+            this.panel_body.Size = new System.Drawing.Size(1572, 601);
             this.panel_body.TabIndex = 2;
             // 
             // fr_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1108, 554);
-            this.Controls.Add(this.panel_body);
+            this.ClientSize = new System.Drawing.Size(1782, 683);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel_body);
             this.Controls.Add(this.panel1);
             this.Name = "fr_Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fr_Main";
             this.Load += new System.EventHandler(this.fr_Main_Load);
             this.panel1.ResumeLayout(false);
