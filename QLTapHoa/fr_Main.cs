@@ -56,8 +56,8 @@ namespace QLTapHoa
 
         private void button6_Click(object sender, EventArgs e)
         {
-            //fr_QLNV frqlth = new fr_QLNV();
-            //frqlth.Show();
+            fr_QLNV frqlth = new fr_QLNV();
+            frqlth.Show();
         }
     }
 }
