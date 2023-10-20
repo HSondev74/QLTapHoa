@@ -31,7 +31,8 @@ namespace QLTapHoa
 
         private void fr_DangNhap_Load(object sender, EventArgs e)
         {
-            
+           
+
             string sql = "select * from Quyen";
             DataTable dt = ketnoi.truyvan(sql);
             cmb_Quyen.DataSource = dt;

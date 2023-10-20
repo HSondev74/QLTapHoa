@@ -14,9 +14,23 @@ namespace QLTapHoa
     public partial class fr_Main : Form
     {
         string tendangnhap = "", matkhau = "", quyen = "";
+        private Button shrinkButton;
+        private bool firstRun = true;
         public fr_Main()
         {
             InitializeComponent();
+            this.Text = "Ứng dụng của bạn";
+            this.Size = new System.Drawing.Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
+
+            this.shrinkButton = new Button();
+            this.shrinkButton.Text = "Thu nhỏ";
+            this.shrinkButton.Size = new System.Drawing.Size(100, 30);
+            this.shrinkButton.Location = new System.Drawing.Point(10, 10);
+            this.shrinkButton.Click += srinkbutton_Click;
+
+            this.Controls.Add(shrinkButton);
+
+            //this.FormClosed += MainForm_FormClosed;
         }
         public fr_Main(string tendangnhap, string matkhau, string quyen)
         {
@@ -193,6 +207,11 @@ namespace QLTapHoa
                 }
             }
 
+        }
+
+        private void srinkbutton_Click(object sender, EventArgs e)
+        {
+            this.Size = new System.Drawing.Size(800, 600);
         }
 
         private void iconButton7_Click(object sender, EventArgs e)
