@@ -54,6 +54,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel_body = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button9 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -62,6 +64,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.button9);
             this.panel1.Controls.Add(this.panel11);
             this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.panel9);
@@ -81,7 +85,7 @@
             this.panel1.Controls.Add(this.panel12);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(210, 553);
+            this.panel1.Size = new System.Drawing.Size(210, 686);
             this.panel1.TabIndex = 0;
             // 
             // panel11
@@ -153,7 +157,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button8.ForeColor = System.Drawing.Color.Transparent;
-            this.button8.Location = new System.Drawing.Point(66, 507);
+            this.button8.Location = new System.Drawing.Point(69, 542);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(138, 35);
             this.button8.TabIndex = 15;
@@ -203,6 +207,7 @@
             this.button5.Text = "Kho hàng";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -277,7 +282,7 @@
             // 
             this.panel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel12.BackgroundImage")));
             this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel12.Location = new System.Drawing.Point(0, 496);
+            this.panel12.Location = new System.Drawing.Point(3, 531);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(79, 57);
             this.panel12.TabIndex = 7;
@@ -292,7 +297,7 @@
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Location = new System.Drawing.Point(209, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(898, 70);
+            this.panel2.Size = new System.Drawing.Size(1142, 70);
             this.panel2.TabIndex = 1;
             // 
             // dateTimePicker1
@@ -358,14 +363,38 @@
             this.panel_body.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel_body.Location = new System.Drawing.Point(211, 70);
             this.panel_body.Name = "panel_body";
-            this.panel_body.Size = new System.Drawing.Size(896, 483);
+            this.panel_body.Size = new System.Drawing.Size(1143, 616);
             this.panel_body.TabIndex = 2;
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel3.Location = new System.Drawing.Point(22, 467);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(55, 42);
+            this.panel3.TabIndex = 14;
+            // 
+            // button9
+            // 
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button9.ForeColor = System.Drawing.Color.RosyBrown;
+            this.button9.Location = new System.Drawing.Point(68, 469);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(135, 48);
+            this.button9.TabIndex = 15;
+            this.button9.Text = "Khach Hang";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // fr_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1108, 554);
+            this.ClientSize = new System.Drawing.Size(1366, 711);
             this.Controls.Add(this.panel_body);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -407,5 +436,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button9;
     }
 }

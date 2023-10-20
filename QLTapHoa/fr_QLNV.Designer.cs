@@ -32,6 +32,12 @@ namespace QLTapHoa
             this.components = new System.ComponentModel.Container();
             this.btn_Dong = new System.Windows.Forms.Button();
             this.dgv_QLNV = new System.Windows.Forms.DataGridView();
+            this.MaNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtGioiTinh = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_BoQua = new System.Windows.Forms.Button();
@@ -52,7 +58,6 @@ namespace QLTapHoa
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_QLNV)).BeginInit();
             this.panel2.SuspendLayout();
@@ -66,7 +71,7 @@ namespace QLTapHoa
             this.btn_Dong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Dong.ForeColor = System.Drawing.Color.Black;
             this.btn_Dong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Dong.Location = new System.Drawing.Point(937, 8);
+            this.btn_Dong.Location = new System.Drawing.Point(876, 9);
             this.btn_Dong.Name = "btn_Dong";
             this.btn_Dong.Size = new System.Drawing.Size(120, 44);
             this.btn_Dong.TabIndex = 17;
@@ -78,6 +83,13 @@ namespace QLTapHoa
             // dgv_QLNV
             // 
             this.dgv_QLNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_QLNV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaNhanVien,
+            this.TenNhanVien,
+            this.GioiTinh,
+            this.DiaChi,
+            this.DienThoai,
+            this.NgaySinh});
             this.dgv_QLNV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_QLNV.Location = new System.Drawing.Point(3, 282);
             this.dgv_QLNV.Name = "dgv_QLNV";
@@ -87,10 +99,58 @@ namespace QLTapHoa
             this.dgv_QLNV.TabIndex = 1;
             this.dgv_QLNV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_QLNV_CellClick);
             // 
+            // MaNhanVien
+            // 
+            this.MaNhanVien.DataPropertyName = "MaNhanVien";
+            this.MaNhanVien.HeaderText = "MaNhanVien";
+            this.MaNhanVien.MinimumWidth = 6;
+            this.MaNhanVien.Name = "MaNhanVien";
+            this.MaNhanVien.Width = 175;
+            // 
+            // TenNhanVien
+            // 
+            this.TenNhanVien.DataPropertyName = "TenNhanVien";
+            this.TenNhanVien.HeaderText = "TenNhanVien";
+            this.TenNhanVien.MinimumWidth = 6;
+            this.TenNhanVien.Name = "TenNhanVien";
+            this.TenNhanVien.Width = 125;
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.DataPropertyName = "GioiTinh";
+            this.GioiTinh.HeaderText = "GioiTinh";
+            this.GioiTinh.MinimumWidth = 6;
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.Width = 125;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.DataPropertyName = "DiaChi";
+            this.DiaChi.HeaderText = "DiaChi";
+            this.DiaChi.MinimumWidth = 6;
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.Width = 125;
+            // 
+            // DienThoai
+            // 
+            this.DienThoai.DataPropertyName = "DienThoai";
+            this.DienThoai.HeaderText = "DienThoai";
+            this.DienThoai.MinimumWidth = 6;
+            this.DienThoai.Name = "DienThoai";
+            this.DienThoai.Width = 125;
+            // 
+            // NgaySinh
+            // 
+            this.NgaySinh.DataPropertyName = "NgaySinh";
+            this.NgaySinh.HeaderText = "NgaySinh";
+            this.NgaySinh.MinimumWidth = 6;
+            this.NgaySinh.Name = "NgaySinh";
+            this.NgaySinh.Width = 125;
+            // 
             // txtGioiTinh
             // 
             this.txtGioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGioiTinh.Location = new System.Drawing.Point(252, 202);
+            this.txtGioiTinh.Location = new System.Drawing.Point(233, 183);
             this.txtGioiTinh.Name = "txtGioiTinh";
             this.txtGioiTinh.Size = new System.Drawing.Size(276, 27);
             this.txtGioiTinh.TabIndex = 23;
@@ -114,7 +174,7 @@ namespace QLTapHoa
             this.btn_BoQua.BackColor = System.Drawing.Color.White;
             this.btn_BoQua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_BoQua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_BoQua.Location = new System.Drawing.Point(786, 8);
+            this.btn_BoQua.Location = new System.Drawing.Point(692, 8);
             this.btn_BoQua.Name = "btn_BoQua";
             this.btn_BoQua.Size = new System.Drawing.Size(145, 44);
             this.btn_BoQua.TabIndex = 16;
@@ -149,6 +209,7 @@ namespace QLTapHoa
             this.btn_Sua.Text = "&Sửa";
             this.btn_Sua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Sua.UseVisualStyleBackColor = false;
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
             // btn_Xoa
             // 
@@ -156,13 +217,14 @@ namespace QLTapHoa
             this.btn_Xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Xoa.ForeColor = System.Drawing.Color.Black;
             this.btn_Xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Xoa.Location = new System.Drawing.Point(656, 8);
+            this.btn_Xoa.Location = new System.Drawing.Point(534, 8);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(111, 44);
             this.btn_Xoa.TabIndex = 13;
             this.btn_Xoa.Text = "&Xóa";
             this.btn_Xoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Xoa.UseVisualStyleBackColor = false;
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
             // btn_Them
             // 
@@ -177,11 +239,12 @@ namespace QLTapHoa
             this.btn_Them.Text = "&Thêm";
             this.btn_Them.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Them.UseVisualStyleBackColor = false;
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // txt_TenNhanVien
             // 
             this.txt_TenNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TenNhanVien.Location = new System.Drawing.Point(252, 152);
+            this.txt_TenNhanVien.Location = new System.Drawing.Point(233, 117);
             this.txt_TenNhanVien.Name = "txt_TenNhanVien";
             this.txt_TenNhanVien.Size = new System.Drawing.Size(276, 27);
             this.txt_TenNhanVien.TabIndex = 10;
@@ -189,7 +252,7 @@ namespace QLTapHoa
             // txt_DiaChi
             // 
             this.txt_DiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_DiaChi.Location = new System.Drawing.Point(720, 95);
+            this.txt_DiaChi.Location = new System.Drawing.Point(701, 35);
             this.txt_DiaChi.Name = "txt_DiaChi";
             this.txt_DiaChi.Size = new System.Drawing.Size(276, 27);
             this.txt_DiaChi.TabIndex = 19;
@@ -197,7 +260,7 @@ namespace QLTapHoa
             // txt_Sodienthoai
             // 
             this.txt_Sodienthoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Sodienthoai.Location = new System.Drawing.Point(720, 151);
+            this.txt_Sodienthoai.Location = new System.Drawing.Point(701, 116);
             this.txt_Sodienthoai.Name = "txt_Sodienthoai";
             this.txt_Sodienthoai.Size = new System.Drawing.Size(276, 27);
             this.txt_Sodienthoai.TabIndex = 22;
@@ -206,7 +269,7 @@ namespace QLTapHoa
             // 
             this.dtp_NgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_NgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_NgaySinh.Location = new System.Drawing.Point(720, 209);
+            this.dtp_NgaySinh.Location = new System.Drawing.Point(701, 190);
             this.dtp_NgaySinh.Name = "dtp_NgaySinh";
             this.dtp_NgaySinh.Size = new System.Drawing.Size(276, 27);
             this.dtp_NgaySinh.TabIndex = 21;
@@ -255,16 +318,16 @@ namespace QLTapHoa
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(3, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1083, 255);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // txt_MaNhanVien
             // 
             this.txt_MaNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_MaNhanVien.Location = new System.Drawing.Point(252, 95);
+            this.txt_MaNhanVien.Location = new System.Drawing.Point(233, 35);
             this.txt_MaNhanVien.Name = "txt_MaNhanVien";
             this.txt_MaNhanVien.Size = new System.Drawing.Size(276, 27);
             this.txt_MaNhanVien.TabIndex = 8;
@@ -272,9 +335,9 @@ namespace QLTapHoa
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(597, 215);
+            this.label7.Location = new System.Drawing.Point(578, 196);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(94, 20);
             this.label7.TabIndex = 11;
@@ -283,9 +346,9 @@ namespace QLTapHoa
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(95, 209);
+            this.label4.Location = new System.Drawing.Point(76, 190);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 20);
             this.label4.TabIndex = 12;
@@ -294,9 +357,9 @@ namespace QLTapHoa
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(597, 158);
+            this.label6.Location = new System.Drawing.Point(578, 123);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(99, 20);
             this.label6.TabIndex = 13;
@@ -305,9 +368,9 @@ namespace QLTapHoa
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(92, 158);
+            this.label3.Location = new System.Drawing.Point(73, 123);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(132, 20);
             this.label3.TabIndex = 14;
@@ -316,9 +379,9 @@ namespace QLTapHoa
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(597, 101);
+            this.label5.Location = new System.Drawing.Point(578, 41);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 20);
             this.label5.TabIndex = 18;
@@ -327,25 +390,13 @@ namespace QLTapHoa
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(92, 101);
+            this.label2.Location = new System.Drawing.Point(73, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(126, 20);
             this.label2.TabIndex = 15;
             this.label2.Text = "Mã Nhân Viên";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(307, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(453, 44);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "DANH MỤC NHÂN VIÊN";
             // 
             // contextMenuStrip1
             // 
@@ -395,7 +446,12 @@ namespace QLTapHoa
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaNhanVien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenNhanVien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DienThoai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh;
     }
 }

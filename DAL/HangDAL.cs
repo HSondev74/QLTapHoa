@@ -23,5 +23,12 @@ namespace DAL
             DataTable dt = DBAccess.truyvan(sql);
             return dt;
         }
+        public static void Them_HANG(HangDTO them)
+        {
+            string sql = "Insert into tblHang values('" + them.MaHang1 + "','" + them.TenHang1 + "','" + them.MaChatLieu1 + "','" + them.SoLuong1 + "','" + them.DonGiaNhap1 + "','" + them.DonGiaBan1 + "','" + them.GhiChu1 + "')";
+
+            DBAccess.thucthi(sql);
+
+        }
     }
 }

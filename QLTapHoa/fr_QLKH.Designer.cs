@@ -39,7 +39,6 @@ namespace QLTapHoa
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.btn_Them = new System.Windows.Forms.Button();
             this.txt_Sodienthoai = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.txt_TenKhach = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_DiaChi = new System.Windows.Forms.TextBox();
@@ -48,6 +47,10 @@ namespace QLTapHoa
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.MaKhach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenKhach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachhang)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -57,10 +60,10 @@ namespace QLTapHoa
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(584, 167);
+            this.label6.Location = new System.Drawing.Point(584, 158);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(99, 20);
             this.label6.TabIndex = 14;
@@ -69,6 +72,11 @@ namespace QLTapHoa
             // dgvKhachhang
             // 
             this.dgvKhachhang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKhachhang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaKhach,
+            this.TenKhach,
+            this.DiaChi,
+            this.DienThoai});
             this.dgvKhachhang.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvKhachhang.Location = new System.Drawing.Point(3, 248);
             this.dgvKhachhang.Name = "dgvKhachhang";
@@ -176,32 +184,21 @@ namespace QLTapHoa
             this.btn_Them.Text = "Thêm";
             this.btn_Them.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Them.UseVisualStyleBackColor = false;
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // txt_Sodienthoai
             // 
             this.txt_Sodienthoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Sodienthoai.Location = new System.Drawing.Point(707, 161);
+            this.txt_Sodienthoai.Location = new System.Drawing.Point(707, 152);
             this.txt_Sodienthoai.Multiline = true;
             this.txt_Sodienthoai.Name = "txt_Sodienthoai";
             this.txt_Sodienthoai.Size = new System.Drawing.Size(289, 28);
             this.txt_Sodienthoai.TabIndex = 18;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(309, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(462, 44);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "QUẢN LÝ KHÁCH HÀNG";
-            // 
             // txt_TenKhach
             // 
             this.txt_TenKhach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TenKhach.Location = new System.Drawing.Point(239, 161);
+            this.txt_TenKhach.Location = new System.Drawing.Point(239, 152);
             this.txt_TenKhach.Name = "txt_TenKhach";
             this.txt_TenKhach.Size = new System.Drawing.Size(298, 27);
             this.txt_TenKhach.TabIndex = 11;
@@ -209,10 +206,10 @@ namespace QLTapHoa
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(64, 110);
+            this.label2.Location = new System.Drawing.Point(64, 60);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 20);
             this.label2.TabIndex = 17;
@@ -221,7 +218,7 @@ namespace QLTapHoa
             // txt_DiaChi
             // 
             this.txt_DiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_DiaChi.Location = new System.Drawing.Point(707, 104);
+            this.txt_DiaChi.Location = new System.Drawing.Point(707, 54);
             this.txt_DiaChi.Name = "txt_DiaChi";
             this.txt_DiaChi.Size = new System.Drawing.Size(289, 27);
             this.txt_DiaChi.TabIndex = 12;
@@ -229,10 +226,10 @@ namespace QLTapHoa
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(584, 110);
+            this.label5.Location = new System.Drawing.Point(584, 60);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 20);
             this.label5.TabIndex = 16;
@@ -241,7 +238,7 @@ namespace QLTapHoa
             // txt_MaKhach
             // 
             this.txt_MaKhach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_MaKhach.Location = new System.Drawing.Point(239, 104);
+            this.txt_MaKhach.Location = new System.Drawing.Point(239, 54);
             this.txt_MaKhach.Name = "txt_MaKhach";
             this.txt_MaKhach.Size = new System.Drawing.Size(298, 27);
             this.txt_MaKhach.TabIndex = 9;
@@ -250,7 +247,6 @@ namespace QLTapHoa
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.Controls.Add(this.txt_Sodienthoai);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txt_TenKhach);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txt_DiaChi);
@@ -266,10 +262,10 @@ namespace QLTapHoa
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(64, 164);
+            this.label3.Location = new System.Drawing.Point(64, 155);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(148, 20);
             this.label3.TabIndex = 15;
@@ -291,6 +287,38 @@ namespace QLTapHoa
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1089, 702);
             this.tableLayoutPanel1.TabIndex = 1;
+            // 
+            // MaKhach
+            // 
+            this.MaKhach.DataPropertyName = "MaKhach";
+            this.MaKhach.HeaderText = "MaKhach";
+            this.MaKhach.MinimumWidth = 6;
+            this.MaKhach.Name = "MaKhach";
+            this.MaKhach.Width = 250;
+            // 
+            // TenKhach
+            // 
+            this.TenKhach.DataPropertyName = "TenKhach";
+            this.TenKhach.HeaderText = "TenKhach";
+            this.TenKhach.MinimumWidth = 6;
+            this.TenKhach.Name = "TenKhach";
+            this.TenKhach.Width = 220;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.DataPropertyName = "DiaChi";
+            this.DiaChi.HeaderText = "DiaChi";
+            this.DiaChi.MinimumWidth = 6;
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.Width = 250;
+            // 
+            // DienThoai
+            // 
+            this.DienThoai.DataPropertyName = "DienThoai";
+            this.DienThoai.HeaderText = "DienThoai";
+            this.DienThoai.MinimumWidth = 6;
+            this.DienThoai.Name = "DienThoai";
+            this.DienThoai.Width = 200;
             // 
             // fr_QLKH
             // 
@@ -322,7 +350,6 @@ namespace QLTapHoa
         private System.Windows.Forms.Button btn_Xoa;
         private System.Windows.Forms.Button btn_Them;
         private System.Windows.Forms.TextBox txt_Sodienthoai;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_TenKhach;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_DiaChi;
@@ -331,5 +358,9 @@ namespace QLTapHoa
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaKhach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenKhach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DienThoai;
     }
 }

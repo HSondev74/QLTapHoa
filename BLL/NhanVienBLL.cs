@@ -24,5 +24,17 @@ namespace BLL
         //{
         //    NhanVienDAL.ThemNV(nhanvien);
         //}
+        public void Them_NV(NhanVienDTO nv)
+        {
+            NhanVienDAL.Them_NV(nv);
+        }
+        public void Xoa_NV(NhanVienDTO nv)
+        {
+            NhanVienDAL.Xoa_NV(nv);
+        }
+        public void Sua_NV(NhanVienDTO nv)
+        {
+            NhanVienDAL.Sua_NV(nv);
+        }
     }
 }

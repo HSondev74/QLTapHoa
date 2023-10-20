@@ -20,5 +20,12 @@ namespace BLL
         {
             return HangDAL.Tim_Kiem_MaHang(ma);
         }
+
+        public void Them_HANG(HangDTO kh)
+        {
+            HangDAL.Them_HANG(kh);
+        }
+
+        
     }
 }

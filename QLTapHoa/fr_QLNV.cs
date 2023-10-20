@@ -33,7 +33,12 @@ namespace QLTapHoa
                 dtp_NgaySinh.Text = dgv_QLNV.Rows[i].Cells[5].Value.ToString();
             }
         }
-
+        public void Hienthi()
+        {
+            dgv_QLNV.DataSource = null;
+            DataTable dt = nhanvienbll.Tra_ds_nhanvien();
+            dgv_QLNV.DataSource = dt;
+        }
         private void fr_QLNV_Load(object sender, EventArgs e)
         {
             DataTable dt = nhanvienbll.Tra_ds_nhanvien();
@@ -43,6 +48,36 @@ namespace QLTapHoa
         private void btn_Dong_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_Them_Click(object sender, EventArgs e)
+        {
+            NhanVienDTO nhanviendto = new NhanVienDTO(txt_MaNhanVien.Text, txt_TenNhanVien.Text, txtGioiTinh.Text, txt_DiaChi.Text, txt_Sodienthoai.Text, dtp_NgaySinh.Value);
+            nhanvienbll.Them_NV(nhanviendto);
+
+            Hienthi();
+        }
+
+        private void btn_Xoa_Click(object sender, EventArgs e)
+        {
+
+            NhanVienDTO nhanviendto = new NhanVienDTO(txt_MaNhanVien.Text, txt_TenNhanVien.Text, txtGioiTinh.Text, txt_DiaChi.Text, txt_Sodienthoai.Text, dtp_NgaySinh.Value);
+            
+            nhanvienbll.Xoa_NV(nhanviendto);
+            Hienthi();
+        }
+
+        private void btn_Sua_Click(object sender, EventArgs e)
+        {
+            NhanVienDTO nhanviendto = new NhanVienDTO(txt_MaNhanVien.Text, txt_TenNhanVien.Text, txtGioiTinh.Text, txt_DiaChi.Text, txt_Sodienthoai.Text, dtp_NgaySinh.Value);
+
+            nhanvienbll.Sua_NV(nhanviendto);
+            Hienthi();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
