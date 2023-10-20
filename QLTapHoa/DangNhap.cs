@@ -13,6 +13,7 @@ namespace QLTapHoa
 {
     public partial class fr_DangNhap : Form
     {
+        public static string username, password;
         public fr_DangNhap()
         {
             InitializeComponent();
@@ -54,21 +55,34 @@ namespace QLTapHoa
             string user, pass;
             user = txt_User.Text;
             pass = txt_pass.Text;
+            username = txt_User.Text;
+            password = txt_pass.Text;
             string typeUser = cmb_Quyen.SelectedValue.ToString();
-            
             string sql = $"select * from Account where type = N'{typeUser}' ";
+
             DataTable dt = ketnoi.truyvan(sql);
+            //string username = "";
+            MessageBox.Show(dt.Rows.Count.ToString());
             bool kt = false;
             foreach(DataRow dr in dt.Rows)
             {
-                if ((dr[1].ToString().Trim()== user) && (dr[2].ToString().Trim()== pass)) { kt = true; break; } 
+
+                if ((dr[1].ToString().Trim() == user) && (dr[2].ToString().Trim()== pass))
+                {
+                   //username  = dr[1].ToString();
+                   // MessageBox.Show(username);
+                    kt = true; 
+                    break; 
+                } 
             }
             if(kt == true)
             {
+                //MessageBox.Show(username);
                 MessageBox.Show("Ban nhap Thanh cong", "Thong Bao", MessageBoxButtons.OKCancel);
-                Form1 form1 = new Form1();
-                form1.Show();
-                this.Hide();
+                    fr_Main main = new fr_Main(dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), dt.Rows[0][3].ToString());
+                    main.Show();
+                    this.Hide();
+ 
             }
             else
             {
@@ -102,21 +116,17 @@ namespace QLTapHoa
            
         }
 
-        private void btn_ClosePass_Click(object sender, EventArgs e)
+        private void btn_openPass_Click(object sender, EventArgs e)
         {
             if (txt_pass.PasswordChar == '\0')
             {
-                btn_openPass.BringToFront();
                 txt_pass.PasswordChar = '*';
+                btn_openPass.BackgroundImage = Properties.Resources.ShowPasswordImage; // Set the button icon for hiding the password
             }
-        }
-
-        private void btn_openPass_Click(object sender, EventArgs e)
-        {
-            if (txt_pass.PasswordChar == '*')
+            else
             {
-                btn_ClosePass.BringToFront();
                 txt_pass.PasswordChar = '\0';
+                btn_openPass.BackgroundImage = Properties.Resources.HidePasswordImage; // Set the button icon for showing the password
             }
         }
 
@@ -127,7 +137,7 @@ namespace QLTapHoa
             this.Hide();
         }
 
-        private void kryptonPanel1_Paint(object sender, PaintEventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
