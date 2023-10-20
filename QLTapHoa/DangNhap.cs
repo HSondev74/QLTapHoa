@@ -13,6 +13,7 @@ namespace QLTapHoa
 {
     public partial class fr_DangNhap : Form
     {
+        public static string username, password;
         public fr_DangNhap()
         {
             InitializeComponent();
@@ -54,21 +55,30 @@ namespace QLTapHoa
             string user, pass;
             user = txt_User.Text;
             pass = txt_pass.Text;
+            username = txt_User.Text;
+            password = txt_pass.Text;
             string typeUser = cmb_Quyen.SelectedValue.ToString();
-            
             string sql = $"select * from Account where type = N'{typeUser}' ";
 
             DataTable dt = ketnoi.truyvan(sql);
-
+            //string username = "";
+            MessageBox.Show(dt.Rows.Count.ToString());
             bool kt = false;
             foreach(DataRow dr in dt.Rows)
             {
-                if ((dr[1].ToString().Trim()== user) && (dr[2].ToString().Trim()== pass)) { kt = true; break; } 
+
+                if ((dr[1].ToString().Trim() == user) && (dr[2].ToString().Trim()== pass))
+                {
+                   //username  = dr[1].ToString();
+                   // MessageBox.Show(username);
+                    kt = true; 
+                    break; 
+                } 
             }
             if(kt == true)
             {
-                
-                    MessageBox.Show("Ban nhap Thanh cong", "Thong Bao", MessageBoxButtons.OKCancel);
+                //MessageBox.Show(username);
+                MessageBox.Show("Ban nhap Thanh cong", "Thong Bao", MessageBoxButtons.OKCancel);
                     fr_Main main = new fr_Main(dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), dt.Rows[0][3].ToString());
                     main.Show();
                     this.Hide();

@@ -32,6 +32,8 @@ namespace QLTapHoa
         private int currentStep = 0;
         private Timer transitionTimer = new Timer();
 
+        
+
         private void OpenChildForm(Form childForm)
         {
             if (curentFormChild != null)
@@ -50,7 +52,8 @@ namespace QLTapHoa
 
         private void fr_Main_Load(object sender, EventArgs e)
         {
-            label1.Text = tendangnhap.ToUpper();
+            //label1.Text = tendangnhap.ToUpper();
+            label1.Text = fr_DangNhap.username;
             if(quyen == "admin")
             {
                 label3.Text = "Quản Lý";
