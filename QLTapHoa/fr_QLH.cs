@@ -132,5 +132,18 @@ namespace QLTapHoa
         {
 
         }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            float soluong = float.Parse(txtSoLuong.Text);
+            float dongianhap = float.Parse(txtDonGiaNhap.Text);
+            float dongiaban = float.Parse(txtDonGiaBan.Text);
+
+            HangDTO hangdto = new HangDTO(txtMaHang.Text, txtTenHang.Text, cboMaChatLieu.Text, soluong, dongianhap, dongiaban, txtGhiChu.Text);
+            hangbll.Sua_Hang(hangdto);
+
+
+            Hienthi();
+        }
     }
 }

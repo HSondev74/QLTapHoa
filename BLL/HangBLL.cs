@@ -25,7 +25,12 @@ namespace BLL
         {
             HangDAL.Them_HANG(kh);
         }
-
+        public void Sua_Hang(HangDTO kh)
+        {
+            HangDAL.Sua_Hang(kh);
+        }
         
+
+
     }
 }

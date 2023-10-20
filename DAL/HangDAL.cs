@@ -30,5 +30,17 @@ namespace DAL
             DBAccess.thucthi(sql);
 
         }
+        public static void Sua_Hang(HangDTO sua)
+        {
+            string sql = "update tblHang set TenHang='" + sua.TenHang1 +
+            "',MaChatLieu='" + sua.MaChatLieu1 +
+            "',SoLuong='" + sua.SoLuong1 +
+            "',DonGiaNhap='" + sua.DonGiaNhap1 +
+
+            "',DonGiaBan='" + sua.DonGiaBan1 +
+            "',GhiChu='" + sua.GhiChu1 + "'  where MaHang = '" + sua.MaHang1 + "'";
+
+            DBAccess.thucthi(sql);
+        }
     }
 }
