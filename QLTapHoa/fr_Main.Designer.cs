@@ -179,6 +179,7 @@
             // 
             // iconButton1
             // 
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.iconButton1.FlatAppearance.BorderSize = 0;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
@@ -193,7 +194,7 @@
             this.iconButton1.Size = new System.Drawing.Size(268, 68);
             this.iconButton1.TabIndex = 16;
             this.iconButton1.Text = "Trang Chủ";
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.UseVisualStyleBackColor = false;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click_1);
             // 
             // iconButton9
@@ -370,6 +371,7 @@
             this.Name = "fr_Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fr_Main";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.fr_Main_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

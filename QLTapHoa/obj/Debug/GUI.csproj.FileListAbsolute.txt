@@ -29,3 +29,4 @@ C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.QuenMK.resources
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.fr_Main.resources
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.ToastUserControl.resources

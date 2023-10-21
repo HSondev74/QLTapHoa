@@ -61,14 +61,14 @@ namespace QLTapHoa
             {
                 label3.Text = "Nhân Viên";
             }
-            transitionTimer.Interval = 100; // Thời gian giữa các bước chuyển đổi (50ms)
+            transitionTimer.Interval = 50; // Thời gian giữa các bước chuyển đổi (50ms)
             transitionTimer.Tick += timer2_Tick;
             timer1.Start();
         }
       
         private struct RGBColors
         {
-            public static Color color1 = Color.FromArgb(239,68,68);
+            public static Color color1 = Color.GhostWhite;
         }
         private void AnimateButton(Button button)
         {
@@ -132,40 +132,30 @@ namespace QLTapHoa
         private void iconButton2_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Form1(tendangnhap, matkhau, quyen));
-            //label1.Text = button1.Text;
-            //Activebutton(sender);
             AnimateButton((Button)sender);
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Form1());
-            //label1.Text = button1.Text;
-            //Activebutton(sender);
             AnimateButton((Button)sender);
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Form1());
-            //label1.Text = button1.Text;
-            //Activebutton(sender);
             AnimateButton((Button)sender);
         }
 
         private void iconButton5_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Form1());
-            //label1.Text = button1.Text;
-            //Activebutton(sender);
             AnimateButton((Button)sender);
         }
 
         private void iconButton6_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Form1());
-            //label1.Text = button1.Text;
-            //Activebutton(sender);
             AnimateButton((Button)sender);
         }
 
@@ -195,19 +185,17 @@ namespace QLTapHoa
 
         }
 
+       
+
         private void iconButton7_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Form1());
-            //label1.Text = button1.Text;
-            //Activebutton(sender);
             AnimateButton((Button)sender);
         }
 
         private void iconButton8_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Form1());
-            //label1.Text = button1.Text;
-            //Activebutton(sender);
             AnimateButton((Button)sender);
         }
     }
