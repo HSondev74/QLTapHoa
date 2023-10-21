@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Media.Media3D;
 //using ComponentFactory.Krypton.Toolkit;
 
 namespace QLTapHoa
@@ -62,8 +63,6 @@ namespace QLTapHoa
             string sql = $"select * from Account where type = N'{typeUser}' ";
 
             DataTable dt = ketnoi.truyvan(sql);
-            //string username = "";
-            MessageBox.Show(dt.Rows.Count.ToString());
             bool kt = false;
             foreach(DataRow dr in dt.Rows)
             {
@@ -76,15 +75,20 @@ namespace QLTapHoa
                     break; 
                 } 
             }
-            if(kt == true)
+            if (kt == true)
             {
-                //MessageBox.Show(username);
-                MessageBox.Show("Ban nhap Thanh cong", "Thong Bao", MessageBoxButtons.OKCancel);
+                // Tạo một instance của UserControl
+                ToastUserControl userControl = new ToastUserControl();
+
+                // Assuming you have an instance of the ToastUserControl named "toastUserControl" in your form
+                userControl.ShowSuccessToast("Thành công!");
+
                     fr_Main main = new fr_Main(dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), dt.Rows[0][3].ToString());
-                    main.Show();
                     this.Hide();
- 
+                    main.Show();
+
             }
+
             else
             {
                 MessageBox.Show("Ban nhap khong dung", "Thong Bao", MessageBoxButtons.OKCancel);
@@ -136,6 +140,11 @@ namespace QLTapHoa
             QuenMK quenMK = new QuenMK();
             quenMK.Show();
             this.Hide();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

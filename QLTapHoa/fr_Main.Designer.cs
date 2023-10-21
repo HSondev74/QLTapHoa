@@ -51,7 +51,6 @@
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.srinkbutton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -95,7 +94,6 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel2.Controls.Add(this.srinkbutton);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
@@ -181,6 +179,7 @@
             // 
             // iconButton1
             // 
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.iconButton1.FlatAppearance.BorderSize = 0;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
@@ -195,7 +194,7 @@
             this.iconButton1.Size = new System.Drawing.Size(268, 68);
             this.iconButton1.TabIndex = 16;
             this.iconButton1.Text = "Trang Chủ";
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.UseVisualStyleBackColor = false;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click_1);
             // 
             // iconButton9
@@ -363,16 +362,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
-            // srinkbutton
-            // 
-            this.srinkbutton.Location = new System.Drawing.Point(842, 36);
-            this.srinkbutton.Name = "srinkbutton";
-            this.srinkbutton.Size = new System.Drawing.Size(75, 23);
-            this.srinkbutton.TabIndex = 26;
-            this.srinkbutton.Text = "button1";
-            this.srinkbutton.UseVisualStyleBackColor = true;
-            this.srinkbutton.Click += new System.EventHandler(this.srinkbutton_Click);
-            // 
             // fr_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -382,6 +371,7 @@
             this.Name = "fr_Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fr_Main";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.fr_Main_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -414,6 +404,5 @@
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button srinkbutton;
     }
 }

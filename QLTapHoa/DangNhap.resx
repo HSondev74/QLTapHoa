@@ -149,7 +149,7 @@
   <data name="panel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAtkAAALlCAYAAAAR9fpIAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAha9JREFUeF7tvQ20XVV57+3o6Nvxjve9477cft22Kh7H2zE6+qGefnhFCZB6FSW2
+        DwAACw8BkvkDpQAAha9JREFUeF7tvQ20XVV57+3o6Nvxjve9477cft22Kh7H2zE6+qGefnhFCZB6FSW2
         NohAtCqpfElfqTHBe8UrGklLFVqTFr8rJrT4EUMIKCjHtpyAXI6KcCgaEFCipSmibSNIwgkJWe961pnr
         ZJ99/nvtr/Ux51y/3xi/AfusnJO1197nmf89M9cznwYAUETy799LEBERcTjdMAoAoFGFAxEREYt1wygA
         gEYVDkRERCzWDaMAABpVOBAREbFYN4wCAGhU4UBERMRi3TAKAKBRhQMRERGLdcMoAIBGFQ5EREQs1g2j
@@ -722,4 +722,7 @@
         EWlQXi2CdKfzyz8I1QAAAAAAg5MFbZu1z7WZfEI1wIA87Wn/PwQC7O49ibnoAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>581, 17</value>
+  </metadata>
 </root>

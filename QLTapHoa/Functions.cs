@@ -20,7 +20,6 @@ namespace QuanLyBanHang.Class
             if (con.State != ConnectionState.Open)
             {
                 con.Open();
-                MessageBox.Show("Kết nối thành công");
             }
         }
         //tạo phương thức Disconnect
