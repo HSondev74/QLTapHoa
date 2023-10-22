@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
 using DTO;
-using QuanLyBanHang.Class;
+using QLTapHoa.Class;
 
 namespace QLTapHoa
 {

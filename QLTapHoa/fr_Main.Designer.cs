@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fr_Main));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel_body = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -60,10 +59,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // timer2
-            // 
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // panel1
             // 
@@ -109,18 +104,19 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label4.Location = new System.Drawing.Point(1069, 36);
+            this.label4.Location = new System.Drawing.Point(1307, 36);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(162, 25);
             this.label4.TabIndex = 5;
             this.label4.Text = "Hien thi ngay gio";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(427, 32);
+            this.label3.Location = new System.Drawing.Point(759, 36);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 25);
             this.label3.TabIndex = 3;
@@ -131,7 +127,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(319, 32);
+            this.label2.Location = new System.Drawing.Point(652, 36);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 25);
             this.label2.TabIndex = 2;
@@ -147,7 +143,6 @@
             this.label1.Size = new System.Drawing.Size(68, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Admin";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel4
             // 
@@ -190,6 +185,7 @@
             this.iconButton1.IconSize = 35;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton1.Location = new System.Drawing.Point(-3, 118);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(268, 68);
             this.iconButton1.TabIndex = 16;
@@ -199,18 +195,19 @@
             // 
             // iconButton9
             // 
+            this.iconButton9.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.iconButton9.FlatAppearance.BorderSize = 0;
             this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.iconButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.iconButton9.ForeColor = System.Drawing.Color.Snow;
             this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.RightToBracket;
             this.iconButton9.IconColor = System.Drawing.Color.White;
             this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton9.IconSize = 35;
             this.iconButton9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton9.Location = new System.Drawing.Point(-2, 812);
+            this.iconButton9.Location = new System.Drawing.Point(-2, 807);
             this.iconButton9.Name = "iconButton9";
-            this.iconButton9.Size = new System.Drawing.Size(245, 68);
+            this.iconButton9.Size = new System.Drawing.Size(260, 73);
             this.iconButton9.TabIndex = 24;
             this.iconButton9.Text = "Đăng xuất";
             this.iconButton9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -228,7 +225,8 @@
             this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton8.IconSize = 35;
             this.iconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton8.Location = new System.Drawing.Point(-3, 654);
+            this.iconButton8.Location = new System.Drawing.Point(-3, 650);
+            this.iconButton8.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.iconButton8.Name = "iconButton8";
             this.iconButton8.Size = new System.Drawing.Size(268, 68);
             this.iconButton8.TabIndex = 23;
@@ -247,7 +245,8 @@
             this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton7.IconSize = 35;
             this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.Location = new System.Drawing.Point(-1, 569);
+            this.iconButton7.Location = new System.Drawing.Point(-1, 574);
+            this.iconButton7.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.iconButton7.Name = "iconButton7";
             this.iconButton7.Size = new System.Drawing.Size(263, 68);
             this.iconButton7.TabIndex = 22;
@@ -267,6 +266,7 @@
             this.iconButton6.IconSize = 35;
             this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton6.Location = new System.Drawing.Point(-1, 498);
+            this.iconButton6.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.iconButton6.Name = "iconButton6";
             this.iconButton6.Size = new System.Drawing.Size(263, 68);
             this.iconButton6.TabIndex = 21;
@@ -285,7 +285,8 @@
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton5.IconSize = 35;
             this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(-1, 428);
+            this.iconButton5.Location = new System.Drawing.Point(-1, 422);
+            this.iconButton5.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Size = new System.Drawing.Size(266, 68);
             this.iconButton5.TabIndex = 20;
@@ -304,7 +305,8 @@
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton4.IconSize = 35;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(-2, 282);
+            this.iconButton4.Location = new System.Drawing.Point(-2, 270);
+            this.iconButton4.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.Size = new System.Drawing.Size(267, 68);
             this.iconButton4.TabIndex = 19;
@@ -323,7 +325,8 @@
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton3.IconSize = 35;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(-2, 362);
+            this.iconButton3.Location = new System.Drawing.Point(-2, 346);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Size = new System.Drawing.Size(267, 68);
             this.iconButton3.TabIndex = 18;
@@ -342,7 +345,8 @@
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton2.IconSize = 35;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(-2, 200);
+            this.iconButton2.Location = new System.Drawing.Point(-2, 194);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(264, 68);
             this.iconButton2.TabIndex = 17;
@@ -384,7 +388,6 @@
 
         #endregion
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel_body;
         private System.Windows.Forms.Panel panel2;

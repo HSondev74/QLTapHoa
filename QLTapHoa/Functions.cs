@@ -7,7 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
-namespace QuanLyBanHang.Class
+namespace QLTapHoa.Class
 {
     class Functions
     {

@@ -77,13 +77,10 @@ namespace QLTapHoa
             }
             if (kt == true)
             {
-                // Tạo một instance của UserControl
-                ToastUserControl userControl = new ToastUserControl();
 
-                // Assuming you have an instance of the ToastUserControl named "toastUserControl" in your form
-                userControl.ShowSuccessToast("Thành công!");
 
-                    fr_Main main = new fr_Main(dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), dt.Rows[0][3].ToString());
+                MessageBox.Show("Dang nhap thanh cong!", "Thong Bao", MessageBoxButtons.OKCancel);
+                fr_Main main = new fr_Main(dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), dt.Rows[0][3].ToString());
                     this.Hide();
                     main.Show();
 
