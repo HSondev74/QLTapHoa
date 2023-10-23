@@ -56,3 +56,4 @@ C:\Users\Admin\source\repos\QLTapHoa\QLTapHoa\obj\Debug\GUI.csproj.CoreCompileIn
 C:\Users\Admin\source\repos\QLTapHoa\QLTapHoa\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\Admin\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.exe
 C:\Users\Admin\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.pdb
+C:\Users\Admin\source\repos\QLTapHoa\QLTapHoa\bin\Debug\FontAwesome.Sharp.dll

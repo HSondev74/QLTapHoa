@@ -35,5 +35,12 @@ namespace BLL
         {
             KhachHangDAL.kiemtratrungma(kh);
         }
+
+        public void SaveKH(KhachHangDTO kh)
+        {
+            KhachHangDAL.SaveKH(kh);
+        }
+
+        
     }
 }

@@ -50,5 +50,15 @@ namespace DAL
             if (dt.Rows.Count == 1) return true;
             return false;
         }
+        public static void SaveKH(KhachHangDTO sua)
+        {
+            string sql = "update tblKhach set TenKhach='" + sua.TenKhach1 +
+            "',DiaChi='" + sua.DiaChi1 +
+            "',DienThoai='" + sua.DienThoai1 + "'  where MaKhach = '" + sua.MaKhach1 + "'";
+
+            DBAccess.thucthi(sql);
+        }
+        
+
     }
 }

@@ -29,8 +29,16 @@ namespace BLL
         {
             HangDAL.Sua_Hang(kh);
         }
-        
+        public void Xoa_Hang(HangDTO kh)
+        {
+            HangDAL.Xoa_Hang(kh);
+        }
 
+        //public void Check_MaHang(HangDTO kh)
+        //{
+        //     HangDAL.Check_MaHang(kh);
+        //}
+        
 
     }
 }

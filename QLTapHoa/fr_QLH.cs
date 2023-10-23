@@ -26,6 +26,19 @@ namespace QLTapHoa
             cboMaChatLieu.DataSource = hangbll.Tra_ds_hang();
             cboMaChatLieu.ValueMember = "MaChatLieu";
         }
+        void XoaText()
+        {
+            txtMaHang.ResetText();
+            txtTenHang.ResetText();
+            cboMaChatLieu.ResetText();
+            txtSoLuong.ResetText();
+            txtDonGiaNhap.ResetText();
+            txtDonGiaBan.ResetText();
+            txtGhiChu.ResetText();
+
+
+
+        }
         public void Hienthi()
         {
             dgv_Hang.DataSource = null;
@@ -34,8 +47,7 @@ namespace QLTapHoa
         }
         private void btnHienThiDS_Click(object sender, EventArgs e)
         {
-            DataTable dt = hangbll.Tra_ds_hang();
-            dgv_Hang.DataSource = dt;
+            
         }
 
         private void fr_QLH_Load(object sender, EventArgs e)
@@ -45,9 +57,7 @@ namespace QLTapHoa
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            dgv_Hang.DataSource = null;
-            DataTable dt = hangbll.Tim_Kiem(txtMaHang.Text);
-            dgv_Hang.DataSource = dt;
+            
         }
 
         private void dgv_Hang_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -69,7 +79,6 @@ namespace QLTapHoa
 
         private void btnDong_Click(object sender, EventArgs e)
         {
-            this.Close();
         }
 
          
@@ -77,15 +86,7 @@ namespace QLTapHoa
         private void btnThem_Click(object sender, EventArgs e)
 
         {
-            float soluong = float.Parse(txtSoLuong.Text);
-            float dongianhap = float.Parse(txtDonGiaNhap.Text);
-            float dongiaban = float.Parse(txtDonGiaBan.Text);
-
-            HangDTO hangdto = new HangDTO(txtMaHang.Text, txtTenHang.Text, cboMaChatLieu.Text, soluong, dongianhap, dongiaban, txtGhiChu.Text);
-            hangbll.Them_HANG(hangdto);
-
-
-            Hienthi();
+           
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -130,10 +131,20 @@ namespace QLTapHoa
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-
         }
 
         private void btnSua_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
         {
             float soluong = float.Parse(txtSoLuong.Text);
             float dongianhap = float.Parse(txtDonGiaNhap.Text);
@@ -141,9 +152,61 @@ namespace QLTapHoa
 
             HangDTO hangdto = new HangDTO(txtMaHang.Text, txtTenHang.Text, cboMaChatLieu.Text, soluong, dongianhap, dongiaban, txtGhiChu.Text);
             hangbll.Sua_Hang(hangdto);
-
-
             Hienthi();
+            MessageBox.Show("Bạn đã sửa hàng thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            XoaText();
+        }
+
+        private void btnThem_Click_1(object sender, EventArgs e)
+        {
+            txtMaHang.Text = Functions.CreateKey("HH");
+            MessageBox.Show("Bạn đã thêm mã hàng thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            btnThem.Enabled = false;
+        }
+
+        private void btnXoa_Click_1(object sender, EventArgs e)
+        {
+            float soluong = float.Parse(txtSoLuong.Text);
+            float dongianhap = float.Parse(txtDonGiaNhap.Text);
+            float dongiaban = float.Parse(txtDonGiaBan.Text);
+
+            HangDTO hangdto = new HangDTO(txtMaHang.Text, txtTenHang.Text, cboMaChatLieu.Text, soluong, dongianhap, dongiaban, txtGhiChu.Text);
+            hangbll.Xoa_Hang(hangdto);
+            Hienthi();
+            MessageBox.Show("Bạn đã xóa hàng thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            XoaText();
+        }
+
+        private void btnLuu_Click_1(object sender, EventArgs e)
+        {
+
+            float soluong = float.Parse(txtSoLuong.Text);
+            float dongianhap = float.Parse(txtDonGiaNhap.Text);
+            float dongiaban = float.Parse(txtDonGiaBan.Text);
+            HangDTO hangdto = new HangDTO(txtMaHang.Text, txtTenHang.Text, cboMaChatLieu.Text, soluong, dongianhap, dongiaban, txtGhiChu.Text);
+            hangbll.Them_HANG(hangdto);
+            Hienthi();
+            XoaText();
+            btnThem.Enabled = true;
+        }
+
+        private void btnTimKiem_Click_1(object sender, EventArgs e)
+        {
+            dgv_Hang.DataSource = null;
+            DataTable dt = hangbll.Tim_Kiem(txtMaHang.Text);
+            dgv_Hang.DataSource = dt;
+        }
+
+        private void btnHienThiDS_Click_1(object sender, EventArgs e)
+        {
+            DataTable dt = hangbll.Tra_ds_hang();
+            dgv_Hang.DataSource = dt;
+        }
+
+        private void btnDong_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+
         }
     }
 }
