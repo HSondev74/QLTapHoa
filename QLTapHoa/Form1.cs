@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BLL;
-using DTO;
 using QLTapHoa.Class;
 
 namespace QLTapHoa
@@ -29,12 +27,11 @@ namespace QLTapHoa
             this.matkhau = matkhau;
             this.quyen = quyen;
         }
-        private NhanVienBLL nhanvien = new NhanVienBLL();
             public void Hienthi()
             {
                 dataGridView1.DataSource = null;
-                DataTable dt = nhanvien.Tra_ds_KH();
-                dataGridView1.DataSource = dt;
+                //DataTable dt = nhanvien.Tra_ds_KH();
+                //dataGridView1.DataSource = dt;
             }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -88,8 +85,7 @@ namespace QLTapHoa
         {   
            
 
-            NhanVien nhanviendto = new NhanVien(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text,textBox5.Text,dateTimePicker1.Value);
-            nhanvien.themNV(nhanviendto);
+         
             Hienthi();
             if (quyen == "admin")
             {

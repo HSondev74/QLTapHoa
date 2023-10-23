@@ -3,10 +3,8 @@ C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\QLTapHoa.exe
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\QLTapHoa.pdb
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\BLL.dll
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\DTO.dll
-C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\DAL.dll
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\BLL.pdb
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\DTO.pdb
-C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\DAL.pdb
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\GUI.csproj.AssemblyReference.cache
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.Form1.resources
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.Properties.Resources.resources
@@ -15,7 +13,6 @@ C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\GUI.csproj.CoreCompileInp
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.exe
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.pdb
-C:\Users\JSON\Source\Repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.fr_DangNhap.resources
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Docking.dll
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Navigator.dll
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
@@ -26,7 +23,6 @@ C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
-C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.QuenMK.resources
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.fr_Main.resources
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\FontAwesome.Sharp.dll
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.fr_BanHang.resources

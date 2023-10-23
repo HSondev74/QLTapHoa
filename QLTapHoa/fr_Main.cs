@@ -48,7 +48,7 @@ namespace QLTapHoa
 
         private void fr_Main_Load(object sender, EventArgs e)
         {
-            label1.Text = fr_DangNhap.username;
+            //label1.Text = fr_DangNhap.username;
             if (quyen == "admin")
             {
                 label3.Text = "Quản Lý";
