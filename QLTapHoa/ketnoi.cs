@@ -12,11 +12,12 @@ namespace QLTapHoa
     {
         public static SqlConnection taoketnoi()
         {
-            string chuoikn = @"Data Source=LAPTOP-TATT0IC4\SQLEXPRESS;Initial Catalog=QLTapHoa;Integrated Security=True";
+            string chuoikn = @"Data Source=DESKTOP-6S7IODU;Initial Catalog=QLTapHoa1;Integrated Security=True";
             SqlConnection conn = new SqlConnection(chuoikn);
             conn.Open();
             return conn;
         }
+
         public static DataTable truyvan(string sql)
         {
             DataTable dt = new DataTable();

@@ -12,13 +12,29 @@ namespace BLL
 {
     public class NhanVienBLL
     {
-        public DataTable Tra_ds_KH()
+        public DataTable Tra_DS_NCC()
         {
-            return NhanVienDAL.Tra_ds_KH();
+            return NhaCungCapDAL.Tra_DS_NCC();
         }
-        public void themNV(NhanVien nhanvien)
+
+        public DataTable timkiem_NCC(string ma)
         {
-            NhanVienDAL.ThemNV(nhanvien);
+            return NhaCungCapDAL.timkiem(ma);
+        }
+
+        public void luu_NCC(NhaCungCapDTO ncc)
+        {
+            NhaCungCapDAL.luu_NCC(ncc);
+        }
+
+        public void sua_NCC(NhaCungCapDTO ncc)
+        {
+            NhaCungCapDAL.sua_NCC(ncc);
+        }
+
+        public void xoa_NCC(NhaCungCapDTO ncc)
+        {
+            NhaCungCapDAL.xoa_NCC(ncc);
         }
     }
 }

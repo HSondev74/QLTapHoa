@@ -28,3 +28,30 @@ C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.QuenMK.resources
 C:\Users\JSON\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.fr_Main.resources
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\bin\Debug\QLTapHoa.exe.config
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\bin\Debug\QLTapHoa.exe
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\bin\Debug\QLTapHoa.pdb
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\bin\Debug\BLL.dll
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\bin\Debug\DTO.dll
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\bin\Debug\DAL.dll
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\bin\Debug\BLL.pdb
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\bin\Debug\DTO.pdb
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Docking.pdb
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Navigator.pdb
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\bin\Debug\DAL.pdb
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.fr_DangNhap.resources
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.fr_Main.resources
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.NhaCungCap.resources
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.Properties.Resources.resources
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.QuenMK.resources
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.exe
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.pdb
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\obj\Debug\QLTapHoa.ChatLieu.resources
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\QLTapHoa\bin\Debug\FontAwesome.Sharp.dll

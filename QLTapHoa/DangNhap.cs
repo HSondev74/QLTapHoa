@@ -66,7 +66,7 @@ namespace QLTapHoa
             if(kt == true)
             {
                 MessageBox.Show("Ban nhap Thanh cong", "Thong Bao", MessageBoxButtons.OKCancel);
-                Form1 form1 = new Form1();
+                NhaCungCap form1 = new NhaCungCap();
                 form1.Show();
                 this.Hide();
             }

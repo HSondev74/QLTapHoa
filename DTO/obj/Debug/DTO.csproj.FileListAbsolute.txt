@@ -4,3 +4,9 @@ C:\Users\JSON\source\repos\QLTapHoa\DTO\obj\Debug\DTO.csproj.AssemblyReference.c
 C:\Users\JSON\source\repos\QLTapHoa\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\JSON\source\repos\QLTapHoa\DTO\obj\Debug\DTO.dll
 C:\Users\JSON\source\repos\QLTapHoa\DTO\obj\Debug\DTO.pdb
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\DTO\bin\Debug\DTO.dll
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\DTO\bin\Debug\DTO.pdb
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\DTO\obj\Debug\DTO.dll
+C:\Users\Nguyen Duc Hieu\source\repos\QLTapHoa\DTO\obj\Debug\DTO.pdb

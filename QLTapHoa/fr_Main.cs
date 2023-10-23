@@ -41,8 +41,7 @@ namespace QLTapHoa
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Form1());
-            label1.Text = button1.Text;
+           
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -52,6 +51,17 @@ namespace QLTapHoa
                 curentFormChild.Close();
                 label1.Text = "Admin";
             } 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new NhaCungCap());
+            label1.Text = button1.Text;
         }
     }
 }
