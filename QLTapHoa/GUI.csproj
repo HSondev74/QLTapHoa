@@ -86,6 +86,24 @@
     <Compile Include="fr_Main.Designer.cs">
       <DependentUpon>fr_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="fr_QLH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fr_QLH.Designer.cs">
+      <DependentUpon>fr_QLH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fr_QLKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fr_QLKH.Designer.cs">
+      <DependentUpon>fr_QLKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fr_QLNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fr_QLNV.Designer.cs">
+      <DependentUpon>fr_QLNV.cs</DependentUpon>
+    </Compile>
     <Compile Include="Functions.cs" />
     <Compile Include="ketnoi.cs" />
     <Compile Include="Program.cs" />
@@ -105,6 +123,15 @@
     <EmbeddedResource Include="fr_Main.resx">
       <DependentUpon>fr_Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fr_QLH.resx">
+      <DependentUpon>fr_QLH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fr_QLKH.resx">
+      <DependentUpon>fr_QLKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fr_QLNV.resx">
+      <DependentUpon>fr_QLNV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -115,6 +142,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="QuenMK.resx">
+      <DependentUpon>QuenMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

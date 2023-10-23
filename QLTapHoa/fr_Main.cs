@@ -180,5 +180,24 @@ namespace QLTapHoa
         {
             Application.Exit();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+            OpenChildForm(new fr_QLNV());
+            label1.Text = button1.Text;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new fr_QLH());
+            label1.Text = button1.Text;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new fr_QLKH());
+            label1.Text = button1.Text;
+        }
     }
 }

@@ -34,7 +34,7 @@ namespace QLTapHoa.Class
         }
         //phương thức thực thi câu lệnh select lấy dữ liệu
         public static DataTable GetDataToTable(string sql)
-        {   
+        {
             DataTable table = new DataTable();
             SqlDataAdapter dap = new SqlDataAdapter(sql, con);
             dap.Fill(table);
@@ -157,8 +157,5 @@ namespace QLTapHoa.Class
             }
             return h;
         }
-
-
-
     }
 }
