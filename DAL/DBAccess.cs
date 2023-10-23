@@ -10,7 +10,7 @@ namespace DAL
 {
     public class DBAccess
     {
-        
+
 
         public static SqlConnection taoketnoi()
         {
@@ -35,6 +35,7 @@ namespace DAL
             cmd.ExecuteNonQuery();
             conn.Close();
         }
+
 
     }
 }

@@ -1,4 +1,4 @@
-﻿using QLTapHoa.Class;
+﻿using QLTapHoa;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -79,6 +79,7 @@ namespace QLTapHoa
                     previousButton = currentButton;
                 }
             }
+
         }
 
 
@@ -118,13 +119,11 @@ namespace QLTapHoa
         private void iconButton2_Click(object sender, EventArgs e)
         {
             AnimateButton((Button)sender);
-            OpenChildForm(new Form1(tendangnhap, matkhau, quyen));
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
             AnimateButton(sender);
-            OpenChildForm(new Form1());
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
@@ -136,13 +135,11 @@ namespace QLTapHoa
         private void iconButton5_Click(object sender, EventArgs e)
         {
             AnimateButton(sender);
-            OpenChildForm(new Form1());
         }
 
         private void iconButton6_Click(object sender, EventArgs e)
         {
             AnimateButton(sender);
-            OpenChildForm(new Form1());
         }
 
 
@@ -163,7 +160,6 @@ namespace QLTapHoa
         private void iconButton7_Click(object sender, EventArgs e)
         {
             AnimateButton(sender);
-            OpenChildForm(new Form1());
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -174,7 +170,6 @@ namespace QLTapHoa
         private void iconButton8_Click(object sender, EventArgs e)
         {
             AnimateButton(sender);
-            OpenChildForm(new Form1());
         }
         private void iconButton9_Click(object sender, EventArgs e)
         {
@@ -184,19 +179,26 @@ namespace QLTapHoa
         private void button6_Click(object sender, EventArgs e)
         {
 
-            OpenChildForm(new fr_QLNV());
             label1.Text = button1.Text;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new fr_QLH());
             label1.Text = button1.Text;
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new fr_QLKH());
+            label1.Text = button1.Text;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
             label1.Text = button1.Text;
         }
     }

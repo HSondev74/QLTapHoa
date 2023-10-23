@@ -42,9 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="tblChatLieuDAL.cs" />
     <Compile Include="DBAccess.cs" />
     <Compile Include="HangDAL.cs" />
     <Compile Include="KhachHangDAL.cs" />
+    <Compile Include="NhaCungCapDAL.cs" />
     <Compile Include="NhanVienDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

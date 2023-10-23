@@ -17,6 +17,7 @@ namespace QLTapHoa
             conn.Open();
             return conn;
         }
+
         public static DataTable truyvan(string sql)
         {
             DataTable dt = new DataTable();

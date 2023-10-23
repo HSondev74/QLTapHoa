@@ -7,7 +7,6 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
-namespace QLTapHoa.Class
 {
     class Functions
     {
@@ -157,5 +156,7 @@ namespace QLTapHoa.Class
             }
             return h;
         }
+
+
     }
 }
